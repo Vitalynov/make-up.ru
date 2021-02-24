@@ -1,0 +1,85 @@
+<!--Header -->
+<header class="header">
+  <div class="container">
+    <div class="header_body">
+      <div class="header_logo">
+        <img src="img/logo1.png" alt="" />
+        <p>VITA VEDENEVA VISAGE</p>
+      </div>
+      <div class="header_burger">
+        <span></span>
+      </div>
+      <nav class="header_menu">
+        <ul class="header_list">
+          <li class="slideIn Right1">
+            <a href="#header1" class="header-link">Главное</a>
+          </li>
+          <li class="slideIn Right2">
+            <a href="#aboutMe" class="header-link" >О себе</a>
+          </li>
+          <li class="slideIn Right3" >
+            <a href="#servises" class="header-link">Услуги</a>
+          </li>
+          <li class="slideIn Right4">
+            <a href="#gallery" class="header-link">Галерея</a>
+          </li>
+          <li class="slideIn Right5">
+            <a href="#reviews" class="header-link">Отзывы</a>
+          </li>
+          
+          <li class="slideIn Right6">
+            <a href="#contacts" class="header-link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+<div class="baner" id="header1">
+  <img src="img/baner.jpg" alt="Фото банер" />
+  <div class="content">
+    <h1>УСЛУГИ ВИЗАЖИСТА В МОСКВЕ И В ПОДМОСКОВЬЕ</h1>
+    <p>
+      В наши дни красота стала лишь вопросом правильного макияжа.<br />Грамотный
+      макияж сделает каждый Ваш день ярче и создаст нужное настроение!
+    </p>
+    <a class="btn-SignUp" href="#!">Записаться</a>
+  </div>
+
+  <!--Popup Форма запроса -->
+  <div id="JS_myForm" class="myForm">
+    <span class="clouse-Form" id="JS_clouseForm">&times;</span>
+    <div class="box">
+      <h4>Записаться:</h4>
+      <form id="form" name="form" action="mail.php" method="POST">
+        <div>
+          <input type="text" name="name" required />
+          <label for="">Имя:*</label>
+        </div>
+        <div>
+          <input type="phone" name="phone" required />
+          <label for="">Телефон:*</label>
+        </div>
+        <div>
+          <input type="email" name="email" placeholder="" value="" required />
+          <label for="">E-mail:</label>
+        </div>
+        <div>
+          <textarea type="text" name="text" placeholder="" required></textarea>
+          <label for="">Ваши пожелания:</label>
+        </div>
+        <input type="submit" name="" value="Отправить" />
+      </form>
+    </div>
+  </div>
+  <!-- Popap:Спасибо за заявку!-->
+  <div class="modalThankYou" id="jsThankYou">
+    <div class="popupThankYou">
+      <div class="close-popupThankYou" id="jsCloseThankYou">&times</div>
+      <h4>
+        Спасибо за заявку! <br />
+        Ожидайте звонка Мастера.
+      </h4>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+//Позволяет делать грид таблицу с переменными: $cols - количество колонок в ряду, $margin - маржин, $heigt - высота колонок.
+@mixin grid($cols, $margin, $heigt) {
+    float: left;
+    background: paleturquoise;
+    margin-right: $margin;
+    margin-bottom: $margin;
+    height: $heigt;
+    width: ((100% - (($cols - 1) * $margin)) / $cols);
+
+    &:nth-child(#{$cols}n) {
+        margin-right: 0;
+    }
+}
+
+@mixin container(){
+    display: block;
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0px 10px;
+}

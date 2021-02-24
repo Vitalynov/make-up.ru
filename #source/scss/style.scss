@@ -1,0 +1,10 @@
+@import "Help sccs/_normalize.scss";
+@import "Help sccs/_variables.scss";
+@import "Help sccs/_mixins.scss";
+@import "Help sccs/_functions.scss";
+@import "Help sccs/_functions.scss";
+
+// Основные блоки
+@import "../header/header.scss";
+@import "../main/main.scss";
+@import "../footer/footer.scss";
